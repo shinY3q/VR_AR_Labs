@@ -556,7 +556,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 2147483648
   m_DistanceCalculationMode: 1
   m_SelectMode: 1
   m_FocusMode: 1
@@ -1603,7 +1603,6 @@ GameObject:
   - component: {fileID: 1866230422}
   - component: {fileID: 1866230427}
   - component: {fileID: 1866230429}
-  - component: {fileID: 1866230428}
   m_Layer: 0
   m_Name: CalibrationSample
   m_TagString: Untagged
@@ -1743,23 +1742,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3176ca8417c015f4a839059d6b3f4eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionReporter
---- !u!114 &1866230428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866230420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 827dd6cd6b0e92e429756852926b42df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Lab2InteractionReporter
-  grabInteractable: {fileID: 1866230429}
-  socketInteractor: {fileID: 0}
-  statusRenderer: {fileID: 0}
-  idleColor: {r: 0.15, g: 0.65, b: 1, a: 1}
-  activeColor: {r: 0.2, g: 1, b: 0.35, a: 1}
 --- !u!114 &1866230429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2073,7 +2055,7 @@ Transform:
   m_GameObject: {fileID: 2062547010}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.08, z: 0}
+  m_LocalPosition: {x: 0, y: 0.105, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2109,8 +2091,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 827dd6cd6b0e92e429756852926b42df, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Lab2InteractionReporter
-  grabInteractable: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::SnapZoneIndicator
   socketInteractor: {fileID: 2087802123}
   statusRenderer: {fileID: 774534509}
   idleColor: {r: 0.15, g: 0.65, b: 1, a: 1}
@@ -2193,7 +2174,7 @@ Transform:
   m_GameObject: {fileID: 2087802121}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.35, y: 1.22, z: 1.5}
+  m_LocalPosition: {x: -1.35, y: 1.11, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
