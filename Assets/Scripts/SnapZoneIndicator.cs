@@ -29,7 +29,7 @@ public class SnapZoneIndicator : MonoBehaviour
     private void OnSocketed(SelectEnterEventArgs args)
     {
         statusRenderer.material.color = activeColor;
-        Debug.Log("Object fixed in Snap Zone: " + args.interactableObject.transform.name);
+        Debug.Log("Object fixed in zone: " + args.interactableObject.transform.name);
     }
 
     private void OnRemoved(SelectExitEventArgs args)
